@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- Tab Widget -->
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!-- Tab Content -->
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- Tab 1 -->
+            <!-- Tab 1 -->
+            <LinearLayout
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title1"
+                    android:text="출입현황"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:id="@+id/scrollView1">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="이곳에 집에 있는 사람들의 명단이 뜹니다."
+                            android:id="@+id/person_in_home"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageButton
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:id="@+id/imageButton1"
+                                android:src="@drawable/on"
+                                android:padding="0dp"
+                                android:layout_margin="10dp"
+                                android:background="@null"
+                                android:layout_gravity="top" />
+
+                            <ImageButton
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:id="@+id/imageButton2"
+                                android:layout_gravity="top|center_horizontal"
+                                android:src="@drawable/on"
+                                android:padding="0dp"
+                                android:layout_margin="10dp"
+                                android:background="@null"/>
+
+                            <ImageButton
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:id="@+id/imageButton3"
+                                android:layout_gravity="top|center_horizontal"
+                                android:src="@drawable/on"
+                                android:padding="0dp"
+                                android:layout_margin="10dp"
+                                android:background="@null"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title2"
+                    android:text="게시판"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:id="@+id/scrollView2"
+                    android:touchscreenBlocksFocus="false"
+                    android:textAlignment="inherit"
+                    android:transitionGroup="true">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="7dp"
+                            android:padding="10dp"
+                            android:text="가족원들의 알림판1"
+                            android:id="@+id/memo1"
+                            android:textSize="18dp"
+                            android:clickable="true"
+                            android:background="#33b5e5"
+                            />
+                    </LinearLayout>
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/memoEditText"
+                        android:layout_weight="0.6"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="메모 등록"
+                        android:id="@+id/memoBtn"
+                        android:layout_gravity="right"
+                        android:layout_weight="0.4"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <!-- Tab 2 -->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/setting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#11111111">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="경찰연락" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:id="@+id/policeCallSwitch"
+                        android:gravity="right"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#33333333">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="가족 연락 단축키 설정" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="단축키 설정하기"
+                        android:id="@+id/fastCallButtonSetting" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fasNum1"
+                        android:text="단축번호 1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fasNum2"
+                        android:text="단축번호 2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fasNum3"
+                        android:text="단축번호 3" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#88888888">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="알람설정" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/alarmSwitch"
+                        android:gravity="right"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#88888888">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/profileSetting"
+                        android:text="프로필 설정"
+                        android:layout_margin="10dp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/login"
+                        android:text="로그인 화면 확인"
+                        android:layout_margin="10dp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/register"
+                        android:text="등록 화면 확인"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>
+

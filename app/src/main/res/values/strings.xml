@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FCM_Test_SS</string>
+    <string name="role">가족원역할</string>
+    <string name="facebook_app_id">341236682879450</string>
+</resources>
