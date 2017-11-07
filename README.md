@@ -1,5 +1,3 @@
-Welcome to Hanium
+Welcome to Hanium_AnjeonSS
 ===================
-
-
-Hanium_AnjeonSS Android Code
+현재 불법침입을 예방하는 방법 중 하나인 ‘IoT 스마트 홈 서비스’는 그 기능이 제한적이고 비용 또한 높다. 따라서 본 연구에서는 불법침입을 예방하기 위해서 실내의 다양한 문을 관리하여 상대적으로 간단하고 저렴한 방범 서비스를 구현하고자 했다.
